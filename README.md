@@ -1,5 +1,18 @@
 # Introduction
 
+## My custom
+```bash
+sudo apt-get install cmake
+cd ~
+git clone https://github.com/juj/fbcp-ili9341.git
+cd fbcp-ili9341
+mkdir build
+cd build
+sudo ./fbcp-ili9341
+cd .. ; rm -rf build; mkdir build; cd build; cmake -DSPI_BUS_CLOCK_DIVISOR=24 -DWAVESHARE35B_ILI9486=ON -DSTATISTICS=1 -DDISPLAY_ROTATE_180_DEGREES=ON ..; make -j ; ./fbcp-ili9341
+```
+
+
 This repository implements a driver for certain SPI-based LCD displays for Raspberry Pi A, B, 2, 3, 4 and Zero.
 
 ![PiTFT display](/example.jpg "Adafruit PiTFT 2.8 with ILI9341 controller")
