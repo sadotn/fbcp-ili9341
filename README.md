@@ -12,8 +12,8 @@ sudo ./fbcp-ili9341
 cd .. ; rm -rf build; mkdir build; cd build; cmake -DSPI_BUS_CLOCK_DIVISOR=24 -DWAVESHARE35B_ILI9486=ON -DSTATISTICS=0 -DDISPLAY_ROTATE_180_DEGREES=ON ..; make -j ; ./fbcp-ili9341
 ```
 
-```
 Touch
+```
 git clone https://github.com/kpishere/fbcp-ili9341
 cd fbcp-ili9341
 mkdir build
